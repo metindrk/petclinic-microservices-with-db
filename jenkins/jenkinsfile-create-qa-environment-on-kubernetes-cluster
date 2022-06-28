@@ -15,7 +15,7 @@ pipeline {
                 sh """
                     cd infrastructure/qa-k8s-terraform
                     sed -i "s/mattkey/$ANS_KEYPAIR/g" main.tf
-                    terraform init no-color
+                    terraform init -no-color
                     terraform apply -auto-approve -no-color
                 """
                 script {
