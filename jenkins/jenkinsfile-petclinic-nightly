@@ -144,7 +144,7 @@ pipeline {
  }
 
     post {
-        always {
+        failure {
             echo 'Deleting all local images'
             sh 'docker image prune -af'
             echo 'Delete the Image Repository on ECR'
