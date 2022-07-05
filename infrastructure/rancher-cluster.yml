@@ -1,6 +1,6 @@
 nodes:
-  - address: 172.31.92.151
-    internal_address: 172.31.92.151
+  - address: 172.31.85.252
+    internal_address: 172.31.85.252
     user: ubuntu
     role:
       - controlplane
@@ -15,7 +15,7 @@ services:
     creation: 6h
     retention: 24h
 
-ssh_key_path: ~/.ssh/call-rancher.pem
+ssh_key_path: ~/.ssh/rancher.pem
 
 # Required for external TLS termination with
 # ingress-nginx v0.22+
